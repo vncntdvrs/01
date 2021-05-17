@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+h1 { 
+    color: red; 
+}
+h1 { 
+    color: blue; 
+}
+body {
+    color: blue;
+}
+
+span {
+    color: black;
+}
+      </style>
+</head>
+<body>
+
+      <h1>Cascade</h1>
+     <p> Cascade implies  that the order of CSS rules matter; 
+       <br>when two rules apply that have equal specificity the one 
+       <br>that comes last in the CSS is the one that will be used.
+       <br><br>
+       <p>In this example, we have two rules that could apply to the h1. 
+        <br>The h1 ends up being colored blue even though the first h1 
+      selector is set to red</p>
+      <br><br>
+     <h1>Inheritance</h1>
+     <p> Inheritance means that some CSS properties by default 
+      <br>inherit values set on the current element's parent element, 
+      <br>and some don't. This can also cause some behavior that 
+      <br>you might not expect.</p>
+      <p> Some CSS property values set on parent elements are 
+        <br>inherited by their child elements, and some aren't.
+        <br>For example, if you set a color and font-family on an element, 
+       <br>every element inside it will also be styled with that color 
+       <br>and font, <span>you've applied different color and font values directly 
+        <br>to them. by using for instance a span element</span> </p>
+
+
+  
+
+</body>
+</html>

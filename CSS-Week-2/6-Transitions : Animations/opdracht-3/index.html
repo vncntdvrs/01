@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            width: 900px;
+            height: 420px;
+            border: solid black 1px;
+            background-color: rgb(233, 231, 231);
+        }
+
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+            background-color: white;
+            border: solid black 1px;
+            transition: all 2s;
+        }
+
+        .container:hover .block {
+            background-color: red;
+            transform: translateX(810px)
+        }
+
+        .container:hover .right1 {
+            border-radius: 50%;
+            transition-timing-function: cubic-bezier(0.2,0,2,0.6,1);
+        }
+
+        .right2 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .container:hover .right2 {
+            border-radius: 15%;
+        }
+
+        .right3{
+            transition-timing-function: cubic-bezier(0.1,1,0.8,1);
+        }
+
+        .right4{
+            transition-timing-function: cubic-bezier(0.4,1,0.8,1);
+        }
+
+        .right5{
+            transition-timing-function: cubic-bezier(0.6,0.7,1,1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block right1">1</div>
+        <div class="block right2">2</div>
+        <div class="block right3">3</div>
+        <div class="block right4">4</div>
+        <div class="block right5">5</div>
+    </div>
+    
+</body>
+</html>

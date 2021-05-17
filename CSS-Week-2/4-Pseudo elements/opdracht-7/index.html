@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+div {
+            content: "";
+            width: 45px;
+            height: 45px;
+            position: relative;
+            background-color: red;
+            margin: 50px;
+        }
+        span::after {
+            content: "";
+            transform: rotate(-60deg);
+            shape-rendering: circle;
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            background-color: red;
+        }
+
+        span::before {
+            content: "";
+            transform: rotate(60deg);
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div><span>
+
+        </span></div>
+    <br><br>
+</body>
+    
+    </body>
+</html>
